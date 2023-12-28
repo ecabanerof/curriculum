@@ -15,7 +15,11 @@ const { class: className, id } = Astro.props
 const { class: className, id } = Astro.props
 ---
 
-<section id={id} class={`${className} w-full mx-auto lg:w-[740px] pb-24`}>
+<section
+  id={id}
+  data-section={id}
+  class={`section ${className} w-full mx-auto lg:w-[740px] pb-24`}
+>
   <slot />
 </section>
 >>>>>>> 5496214 (Add first version for the portfolio)
