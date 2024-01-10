@@ -1,0 +1,28 @@
+---
+import StudiesItem from "./StudiesItem.astro"
+const STUDIES = [
+  {
+    date: "2021-2024",
+    title: "MsC Telecommunications Engineer Radiofrecuency and Data Analyst (EUR-ACE®)",
+    location:"Universidad Autónoma de Madrid"
+  },
+  {
+    date: "2015-2021",
+    title: "Bsc Telecommunications Engineer Electronics, Computer Vision and Sound (EUR-ACE®)",
+    location: "Universidad Autónoma de Madrid",
+    description:
+      "Best TFG 2021 “Differential Analysis between Alzheimer's and Dementia using Recurrent Neural Networks”, Machine Learning",
+    link: "https://repositorio.uam.es/bitstream/handle/10486/698008/caba%C3%B1ero_fernandez_emilio.tfg.pdf?sequence=1",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    STUDIES.map((studies) => (
+      <li class="mb-10 ms-4">
+        <StudiesItem {...studies} />
+      </li>
+    ))
+  }
+</ol>

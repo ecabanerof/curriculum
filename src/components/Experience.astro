@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Creador de Contenido",
+    description:
+      "A tiempo parcial gestiono y divulgo en el podcast La Retahila, creando contenido para multitud de redes sociales.",
+    link2: "https://open.spotify.com/show/13pmTpVZ890SR6GzGtgzT9?si=7060b46920a14044",
+    link3:"https://www.youtube.com/@laretahilapodcast",
+  },
+  {
+    date: "Octubre 2023 - Noviembre 2023",
+    title: "Cloud Strategy − Capgemini Invent",
+    description:
+      " Project Managment. Journey to Cloud: coordination between teams technnical and high level, elaboration of final deliverables. Study of gaps and design of solutions to these gaps in the banking sector. Possible future work on: AI Gen and apply AI help tools to the CEO office",
+  },
+
+  {
+    date: "Octubre 2022 - Abril 2023",
+    title: "Telecommunications Engineer (Soft. Suppory/ Cloud AI /Strategy)  − Huawei",
+    description:
+      "Continuous provisioning of NGIN systems and software configuration management for Telefónica. Help strategy assistant of CEO, Eric Hongbo Li. Client pre-sales cloud ecosystem solutions on MWC 2023. Huawei Cloud development of machine learning prediction tasks. Develop of Eco-friendly systems of cloud. Cloud strategy team of the European AI regulation (GAIA-X). Management of the Spanish AI Sandbox. Participation on 5G regulators conversations for European partners.",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
